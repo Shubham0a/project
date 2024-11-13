@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from app.utils.auth_utils import create_access_token, verify_token
-from app.config import db
+# from app.config import db
 from app.models.user import User, Token
 from passlib.context import CryptContext
 
@@ -18,5 +18,4 @@ async def login(username: str, password: str):
 
 @router.post("/logout")
 async def logout():
-    # Implementation for logout (e.g., token blacklisting if needed)
     return {"message": "Logged out successfully"}

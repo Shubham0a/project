@@ -8,3 +8,6 @@ def get_user_by_username(users_collection: Collection, username: str):
 def create_user(users_collection: Collection, user: User):
     result = users_collection.insert_one(user.dict(by_alias=True))
     return str(result.inserted_id)
+
+
+    
