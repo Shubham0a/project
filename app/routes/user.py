@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from app.utils.auth_utils import verify_token
 from app.crud.user_crud import create_user, get_user_by_username
 from app.models.user import User
+from app.database import db
 from typing import List
 
 router = APIRouter()

@@ -4,7 +4,7 @@ from passlib.context import CryptContext
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 client = MongoClient(config["MONGO_URI"])
-db = client["appdata"]
+db = client["user_data"]
 users_collection = db["users"]
 
 def create_user(username: str, email: str, password: str, role: str = "user"):

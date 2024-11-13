@@ -118,8 +118,6 @@ python app/scripts/create_user.py
 To deploy this application on a serverless platform like **Vercel** or **Deta**, ensure the following:
 - Configure environment variables on the platform.
 - Update `MONGO_URI` to a secure database service, such as MongoDB Atlas.
-  
-Refer to the deployment platform’s documentation for additional steps.
 
 ## Checklist of Implemented Features
 

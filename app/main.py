@@ -7,7 +7,7 @@ from app.routes import auth, user
 app = FastAPI()
 
 client = MongoClient(MONGO_URI)
-db = client["project 0"]
+db = client["user_data"]
 
 # client = MongoClient("mongodb+srv://shubhamiitdev:5KjsIw34uQJyfiUf@cluster1.vdq4y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
 

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from app.utils.auth_utils import create_access_token, verify_token
-# from app.config import db
+from app.database import db
 from app.models.user import User, Token
 from passlib.context import CryptContext
 
